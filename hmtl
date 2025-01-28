@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delícias na Air Fryer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white py-20 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Transforme Sua Alimentação com Receitas Incríveis na Air Fryer! 🍳✨</h1>
+            <p class="text-lg md:text-xl mb-6">Receitas práticas, saudáveis e deliciosas para toda a família.</p>
+            <a href="#benefits" class="bg-white text-orange-500 font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-100 transition">Descubra Agora!</a>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Por que escolher nosso e-book?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                    <img src="/images/easy-recipes.svg" alt="Receitas Fáceis" class="w-20 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Praticidade</h3>
+                    <p class="text-gray-600">Receitas rápidas e fáceis de preparar.</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                    <img src="/images/healthy-food.svg" alt="Comida Saudável" class="w-20 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Saúde</h3>
+                    <p class="text-gray-600">Pratos saudáveis para manter o equilíbrio.</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                    <img src="/images/delicious-recipes.svg" alt="Receitas Deliciosas" class="w-20 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Sabor</h3>
+                    <p class="text-gray-600">Receitas irresistíveis que agradam todos os paladares.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-gray-100 py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">O que nossos clientes dizem?</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <p class="text-gray-600 italic">"As receitas são tão fáceis e deliciosas que minha família se apaixonou!"</p>
+                    <h4 class="text-orange-500 font-semibold mt-4">- Maria Silva</h4>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <p class="text-gray-600 italic">"Nunca pensei que seria tão fácil comer saudável e saboroso ao mesmo tempo."</p>
+                    <h4 class="text-orange-500 font-semibold mt-4">- João Oliveira</h4>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <p class="text-gray-600 italic">"O melhor investimento que já fiz para minha cozinha!"</p>
+                    <h4 class="text-orange-500 font-semibold mt-4">- Ana Costa</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-orange-500 text-white py-20 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6">Pronto para transformar sua cozinha?</h2>
+            <p class="text-lg mb-6">Garanta já seu e-book e descubra um novo mundo de sabores na sua Air Fryer!</p>
+            <a href="#" class="bg-white text-orange-500 font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-100 transition">Receba Suas Receitas Hoje Mesmo!</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Delícias na Air Fryer. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
