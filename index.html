@@ -6,22 +6,53 @@
     <title>Delícias na Air Fryer</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <style>
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .pulse {
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+    </style>
 </head>
 <body class="bg-gray-50 font-sans">
     <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white py-20 text-center">
+    <section class="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white py-20 text-center animate-fade-in">
         <div class="container mx-auto px-4 flex flex-col items-center justify-center">
             <h1 class="text-4xl md:text-6xl font-bold mb-4">Descubra o verdadeiro poder <br class="hidden md:block"> da sua Air Fryer!</h1>
             <p class="text-lg md:text-xl mb-6">Chega de limitar-se à batata frita. Surpreenda-se com receitas práticas, saudáveis e deliciosas.</p>
             <div class="bg-white rounded-lg overflow-hidden shadow-lg mx-auto mt-6 w-full md:w-2/3">
                 <img src="https://i.postimg.cc/DwZry8Km/Copia-Posts-Um-doce-sabor-7-1024x638.webp" alt="Receitas Air Fryer" class="w-full h-auto rounded-lg">
             </div>
-            <a href="#benefits" class="bg-green-500 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-green-600 transition mt-6 inline-block">Quero Acessar as Receitas</a>
+            <a href="#benefits" class="bg-green-500 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-green-600 transition mt-6 inline-block pulse">Quero Acessar as Receitas</a>
         </div>
     </section>
 
     <!-- Veja como é fácil Section -->
-    <section class="py-12">
+    <section class="py-12 animate-fade-in">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold text-gray-800 mb-6">Veja como é fácil:</h2>
             <img src="https://i.postimg.cc/mDppH4qS/White-Beige-Modern-Recipe-Card-1.webp" alt="Receita Air Fryer" class="rounded-lg shadow-lg max-w-xs mx-auto mb-4">
@@ -30,7 +61,7 @@
     </section>
 
     <!-- Chef Section -->
-    <section class="py-20 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white">
+    <section class="py-20 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white animate-fade-in">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-6">Chef Larissa Monteline</h2>
             <div class="grid md:grid-cols-2 gap-8 items-center">
@@ -48,7 +79,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-24 bg-gray-100">
+    <section id="about" class="py-24 bg-gray-100 animate-fade-in">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Sobre o nosso e-book</h2>
             <div class="grid md:grid-cols-2 gap-8 items-center">
@@ -70,7 +101,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="bg-gray-100 py-20">
+    <section class="bg-gray-100 py-20 animate-fade-in">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">O que nossos clientes dizem?</h2>
             <div class="relative">
@@ -90,11 +121,11 @@
     </section>
 
     <!-- Eleve o Nível Section -->
-    <section class="py-12">
+    <section class="py-12 animate-fade-in">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold text-gray-800 mb-6">Eleve o nível dos seus pratos e simplifique sua rotina diária:</h2>
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
                     <div class="bg-yellow-400 p-4 rounded-full shadow-lg">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v4a1 1 0 00.293.707l2 2a1 1 0 001.414-1.414L11 10.586V7z" clip-rule="evenodd" />
@@ -102,7 +133,7 @@
                     </div>
                     <p class="mt-4 text-lg">Tenha em mãos receitas testadas, aprovadas e cuidadosamente balanceadas, para que você não erre a mão em nenhuma delas! Você vai descobrir que fazer nossas receitas é tão fácil quanto contar de 1 a 10.</p>
                 </div>
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
                     <div class="bg-green-400 p-4 rounded-full shadow-lg">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" viewBox="0 0 20 20" fill="currentColor">
                             <path d="M13 7H7v6h6V7z" />
@@ -111,7 +142,7 @@
                     </div>
                     <p class="mt-4 text-lg">Em poucos dias, você sentirá a transformação na sua rotina, desfrutando de mais tempo para si mesma e para quem você ama. Com o passar do tempo, você perceberá que as nossas receitas se tornarão parte essencial da sua cozinha.</p>
                 </div>
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
                     <div class="bg-red-400 p-4 rounded-full shadow-lg">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 015.656 5.656L10 16.343l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
@@ -128,7 +159,7 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold mb-6">Pronto para transformar sua cozinha?</h2>
             <p class="text-lg mb-6">Adquira o e-book com desconto exclusivo por tempo limitado!</p>
-            <a href="#" class="bg-green-500 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-green-600 transition block w-2/3 mx-auto md:inline-block md:w-auto">Garanta Agora!</a>
+            <a href="#" class="bg-green-500 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-green-600 transition block w-2/3 mx-auto md:inline-block md:w-auto pulse">Garanta Agora!</a>
         </div>
     </section>
 
