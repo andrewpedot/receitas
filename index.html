@@ -3,72 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receitas na Air Fryer</title>
+    <title>Delícias na Air Fryer</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
 </head>
 <body class="bg-gray-50 font-sans">
     <!-- Hero Section -->
     <section class="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white py-20 text-center">
-        <div class="container mx-auto px-4">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4">Descubra o verdadeiro poder <br> da sua Air Fryer!</h1>
-            <p class="text-lg md:text-xl mb-6">Receitas práticas, saudáveis e deliciosas para toda a família.</p>
-            <a href="#benefits" class="bg-white text-orange-500 font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-100 transition">Descubra Agora!</a>
+        <div class="container mx-auto px-4 flex flex-col items-center justify-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Descubra o verdadeiro poder <br class="hidden md:block"> da sua Air Fryer!</h1>
+            <p class="text-lg md:text-xl mb-6">Chega de limitar-se à batata frita. Surpreenda-se com receitas práticas, saudáveis e deliciosas.</p>
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg mx-auto mt-6 w-full md:w-2/3">
+                <img src="https://i.postimg.cc/DwZry8Km/Copia-Posts-Um-doce-sabor-7-1024x638.webp" alt="Receitas Air Fryer" class="w-full h-auto rounded-lg">
+            </div>
+            <a href="#benefits" class="bg-green-500 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-green-600 transition mt-6 inline-block">Quero Acessar as Receitas</a>
         </div>
     </section>
 
-    <!-- Sobre o nosso e-book Section -->
-    <section class="py-20">
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24">
+    <!-- New Section: Veja como é fácil -->
+    <section class="py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Veja como é fácil:</h2>
+            <img src="https://i.postimg.cc/mDppH4qS/White-Beige-Modern-Recipe-Card-1.webp" alt="Receita Air Fryer" class="rounded-lg shadow-lg max-w-xs mx-auto mb-4">
+            <p class="text-gray-600">Essa é uma das mais de 90 receitas exclusivas que você vai ter acesso!</p>
+        </div>
+    </section>
+
+    <!-- Chef Section -->
+    <section class="py-20 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-6">Chef Larissa Monteline</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <img src="https://i.postimg.cc/vmLgZLTr/image-1736181732950-72f4091b-ded6-45c7-b7a8-1117c2dea611.jpg" alt="Chef Larissa Monteline" class="rounded-lg shadow-lg mx-auto">
+                </div>
+                <div>
+                    <p class="text-lg mb-4">Olá! Me chamo <strong>Larissa Montelini</strong>, tenho 35 anos, sou mãe de duas princesas e chef de cozinha há 9 anos, com <strong>especialização na culinária brasileira</strong>.</p>
+                    <p class="text-lg mb-4">Minha jornada na cozinha começou ao perceber a necessidade de preparar pratos rápidos e nutritivos para o dia a dia, sem sacrificar o sabor. Foi aí que descobri o fascinante universo da <strong>AirFryer</strong>, e desde então, não consegui mais parar.</p>
+                    <p class="text-lg mb-4">Com anos de experiência e pesquisas, desenvolvi um material exclusivo que possibilita criar <strong>receitas fáceis, deliciosas e ideais para qualquer ocasião</strong>. Hoje, tenho o prazer de compartilhar essas receitas com milhares de pessoas pelo Brasil.</p>
+                    <p class="text-lg">Meu objetivo é <strong>ajudar você a inovar suas refeições</strong> com mais criatividade e praticidade, mostrando que é perfeitamente possível cozinhar de forma saudável e saborosa, mesmo na correria do dia a dia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-gray-100">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Sobre o nosso e-book</h2>
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-4">Uma nova experiência culinária</h3>
-                    <p class="text-gray-600 mb-4">Com o nosso e-book, você aprenderá a explorar todo o potencial da sua Air Fryer, criando pratos incríveis para qualquer ocasião.</p>
+                    <img src="https://i.postimg.cc/y6nkb4fs/60-Del-cias-na-Air-Fryer.png" alt="E-book de Receitas" class="rounded-lg shadow-lg max-w-xs mx-auto" style="background: transparent;">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Uma nova experiência culinária</h3>
+                    <p class="text-gray-600 mb-6">Com o nosso e-book, você aprenderá a explorar todo o potencial da sua Air Fryer, criando pratos incríveis para qualquer ocasião.</p>
                     <ul class="list-disc list-inside text-gray-600">
-                        <li>120+ receitas exclusivas, práticas e saborosas.</li>
+                        <li>60+ receitas exclusivas, práticas e saborosas.</li>
                         <li>Dicas para otimizar seu tempo na cozinha.</li>
                         <li>Soluções criativas para refeições saudáveis.</li>
                     </ul>
-                    <blockquote class="mt-4 text-gray-500 italic">"Criamos este e-book com muito carinho para ajudar você a transformar sua alimentação e impressionar quem você ama." - Larissa Monteline</blockquote>
-                </div>
-                <div class="flex justify-center">
-                    <img src="https://i.postimg.cc/9MQtghdw/Mockup-Del-cias-na-Air-Fryer.png" alt="E-book de Receitas" class="rounded-lg shadow-lg max-w-sm">
+                    <p class="text-gray-600 mt-4">"Criamos este e-book com muito carinho para ajudar você a transformar sua alimentação e impressionar quem você ama." - Equipe: Larissa Monteline</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="bg-gray-100 py-20">
+
+    <!-- CTA Section -->
+    <section class="bg-orange-500 text-white py-20 text-center">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">O que nossos clientes dizem?</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white shadow-lg rounded-lg p-6">
-                    <div class="h-40 flex items-center justify-center rounded-lg overflow-hidden">
-                        <img src="https://i.postimg.cc/m2T4HPRS/56-e1732089364652.webp" alt="Depoimento 1" class="w-full h-full object-cover">
-                    </div>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg p-6">
-                    <div class="h-40 flex items-center justify-center rounded-lg overflow-hidden">
-                        <img src="https://i.postimg.cc/GhD7JCJh/Fym-YEn4650196.webp" alt="Depoimento 2" class="w-full h-full object-cover">
-                    </div>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg p-6">
-                    <div class="h-40 flex items-center justify-center rounded-lg overflow-hidden">
-                        <img src="https://i.postimg.cc/yNpyCQXb/Sv-Khc-D4650196.webp" alt="Depoimento 3" class="w-full h-full object-cover">
-                    </div>
-                </div>
-            </div>
+            <h2 class="text-3xl font-bold mb-6">Pronto para transformar sua cozinha?</h2>
+            <p class="text-lg mb-6">Adquira o e-book com desconto exclusivo por tempo limitado!</p>
+            <a href="#" class="bg-green-500 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-green-600 transition block w-2/3 mx-auto md:inline-block md:w-auto">Garanta Agora!</a>
         </div>
     </section>
 
-    <!-- Call to Action Section -->
-    <section class="bg-white py-20">
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6">Pronto para transformar sua cozinha?</h2>
-            <p class="text-gray-600 mb-8">Adquira o e-book com desconto exclusivo por tempo limitado!</p>
-            <a href="#" class="bg-green-500 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-green-600 transition">Garanta Agora!</a>
+            <p>&copy; 2025 Delícias na Air Fryer. Todos os direitos reservados.</p>
         </div>
-    </section>
+    </footer>
 </body>
 </html>
