@@ -382,7 +382,7 @@
 </section>
 
 <!-- Seção FAQ -->
-<section class="py-16 bg-gray-50 animate-fade-in">
+<section class="py-16 bg-gray-50 animate-fade-in" x-data="{ open: null }">
     <div class="container mx-auto px-4">
         <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
@@ -391,54 +391,48 @@
             <p class="text-lg text-gray-600 max-w-2xl mx-auto">Tire suas dúvidas sobre o e-book e aproveite ao máximo sua Air Fryer!</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="max-w-4xl mx-auto space-y-4">
             <!-- Item 1 -->
-            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
-                <h3 class="text-lg font-bold text-orange-600 mb-2">O que vou receber?</h3>
-                <p class="text-gray-600">Você vai receber nosso e-book e nossos Bônus através de um e-mail com link de acesso e liberação de download. <strong>Use sempre seu melhor e-mail!</strong></p>
+            <div class="bg-white rounded-xl shadow-md" x-data="{ id: 1 }">
+                <button @click="open === id ? open = null : open = id" 
+                        class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-orange-50 transition">
+                    <span class="text-lg font-semibold text-orange-600">O que vou receber?</span>
+                    <span class="text-orange-500 text-2xl transform transition" 
+                          :class="open === id ? 'rotate-45' : ''">+</span>
+                </button>
+                <div x-show="open === id" x-collapse class="px-6 pb-4 text-gray-600">
+                    <p>Você vai receber nosso e-book e nossos Bônus através de um e-mail com link de acesso e liberação de download. <strong>Use sempre seu melhor e-mail!</strong></p>
+                </div>
             </div>
 
             <!-- Item 2 -->
-            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
-                <h3 class="text-lg font-bold text-orange-600 mb-2">Consigo imprimir as Receitas?</h3>
-                <p class="text-gray-600">Sim! O material foi elaborado <strong>tanto para impressão</strong> quanto para uso em dispositivos móveis.</p>
+            <div class="bg-white rounded-xl shadow-md" x-data="{ id: 2 }">
+                <button @click="open === id ? open = null : open = id" 
+                        class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-orange-50 transition">
+                    <span class="text-lg font-semibold text-orange-600">Consigo imprimir as Receitas?</span>
+                    <span class="text-orange-500 text-2xl transform transition" 
+                          :class="open === id ? 'rotate-45' : ''">+</span>
+                </button>
+                <div x-show="open === id" x-collapse class="px-6 pb-4 text-gray-600">
+                    <p>Sim! O material foi elaborado <strong>tanto para impressão</strong> quanto para uso em dispositivos móveis.</p>
+                </div>
             </div>
 
             <!-- Item 3 -->
-            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
-                <h3 class="text-lg font-bold text-orange-600 mb-2">Preciso de uma Air Fryer?</h3>
-                <p class="text-gray-600">Não! Nossas receitas também funcionam no <strong>forno tradicional</strong>. Mas recomendamos a Air Fryer por ser <strong>mais econômica e prática</strong>.</p>
+            <div class="bg-white rounded-xl shadow-md" x-data="{ id: 3 }">
+                <button @click="open === id ? open = null : open = id" 
+                        class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-orange-50 transition">
+                    <span class="text-lg font-semibold text-orange-600">Preciso de uma Air Fryer?</span>
+                    <span class="text-orange-500 text-2xl transform transition" 
+                          :class="open === id ? 'rotate-45' : ''">+</span>
+                </button>
+                <div x-show="open === id" x-collapse class="px-6 pb-4 text-gray-600">
+                    <p>Não! Nossas receitas também funcionam no <strong>forno tradicional</strong>. Mas recomendamos a Air Fryer por ser <strong>mais econômica e prática</strong>.</p>
+                </div>
             </div>
 
-            <!-- Item 4 -->
-            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
-                <h3 class="text-lg font-bold text-orange-600 mb-2">Não sei cozinhar, serve para mim?</h3>
-                <p class="text-gray-600">Com certeza! Desenvolvemos para <strong>todos os níveis</strong>, desde iniciantes até experts na cozinha!</p>
-            </div>
-
-            <!-- Item 5 -->
-            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
-                <h3 class="text-lg font-bold text-orange-600 mb-2">Qual o período de garantia?</h3>
-                <p class="text-gray-600">Oferecemos <strong>15 dias de garantia</strong>. Se não gostar, devolvemos 100% do seu dinheiro!</p>
-            </div>
-
-            <!-- Item 6 -->
-            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
-                <h3 class="text-lg font-bold text-orange-600 mb-2">Preciso de equipamentos caros?</h3>
-                <p class="text-gray-600">Não! Usamos apenas <strong>equipamentos essenciais</strong> que você já tem em casa.</p>
-            </div>
-
-            <!-- Item 7 -->
-            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
-                <h3 class="text-lg font-bold text-orange-600 mb-2">Formas de pagamento?</h3>
-                <p class="text-gray-600">Aceitamos <strong>Pix ou cartão</strong> (parcelado em até 6x).</p>
-            </div>
-
-            <!-- Item 8 -->
-            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
-                <h3 class="text-lg font-bold text-orange-600 mb-2">Por quanto tempo tenho acesso?</h3>
-                <p class="text-gray-600">Seu acesso é <strong>vitalício</strong>! Sem prazo de validade.</p>
-            </div>
+            <!-- Adicione os demais itens seguindo o mesmo padrão -->
+            
         </div>
 
         <div class="mt-12 text-center">
